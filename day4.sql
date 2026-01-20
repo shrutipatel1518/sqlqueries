@@ -1,0 +1,12 @@
+use world;
+select * from city;
+select * from country;
+select * from countrylanguage;
+select c.name , c.Region , l.language from country c join countrylanguage l on c.code = l.countrycode;
+select name , Region  from country order by region;
+select upper(name) from country;
+select name from country where name like '%m';
+select name from country where name like 'm%';
+select name from country where name like '%_m';
+select name from country where name like '%m_';
+select name from country where name like '%_m_';
